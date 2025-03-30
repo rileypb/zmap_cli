@@ -61,20 +61,15 @@ class ZApp:
 
     def display_map(self, *args):    
         map = None
-        print("1")
         for name, m in self.maps.items():
             map = m
-        print(2)
         if not map.arranged:
             self.arranger.arrange(map)
-        print(3)
             
         self.scene = QGraphicsScene()
-        print(4)
 
         for i in range(200):
             self.layout.one_step(map)
-        print(5)
 
         self.display.display(map, self.scene) 
          
