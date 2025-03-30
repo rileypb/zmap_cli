@@ -1,0 +1,10 @@
+<RCC>
+  <qresource prefix="std">
+    <file>content-save-all-outline.png</file>
+    <file>folder-open-outline.png</file>
+    <file>export.png</file>
+    <file>map-outline.png</file>
+    <file>content-save-outline.png</file>
+    <file>file-document-outline.png</file>
+  </qresource>
+</RCC>

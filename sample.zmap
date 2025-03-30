@@ -1,0 +1,20 @@
+outside_house {
+West_of_House:n<->w:North_of_House
+West_of_House:s<->w:South_of_House
+North_of_House:n-->Forest_Path*
+North_of_House:e<->n:Behind_House
+Behind_House:e-->Small_Clearing*
+Behind_House:s<->e:South_of_House
+West_of_House:w-->Forest_sunlight*
+South_of_House:s-->Forest_lantern*
+}
+house {
+Attic [dark]
+
+Kitchen:u<->Attic [short]
+Kitchen:w<->Living_Room [short]
+Kitchen:d-->"Can't climb down chimney"*
+Kitchen:e-->Behind_House* [short]
+Living_Room:w-->Front_Door* [short]
+Living_Room:d-->Cellar* [short]
+}
